@@ -1,25 +1,126 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>我的个人主页</title>
+    <title>我的个人作品集</title>
     <meta charset="UTF-8">
-    <!-- 加一行样式，让页面更美观（可选） -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 美化样式 -->
     <style>
-        body {margin: 50px; font-family: Arial;}
-        h1 {color: #2c3e50;}
-        p {margin: 10px 0; font-size: 16px;}
-        a {color: #3498db; text-decoration: none;}
-        a:hover {text-decoration: underline;}
+        /* 页面整体样式 */
+        body {
+            margin: 0;
+            padding: 50px 20px;
+            background-color: #f8f9fa;
+            font-family: "微软雅黑", Arial, sans-serif;
+        }
+        /* 主容器 */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        /* 个人信息栏 */
+        .profile {
+            text-align: center;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+            border-bottom: 2px solid #f1f8ff;
+        }
+        .profile h2 {
+            color: #2d3748;
+            margin: 10px 0;
+            font-size: 24px;
+        }
+        .profile p {
+            color: #718096;
+            font-size: 16px;
+            margin: 5px 0;
+        }
+        /* 标题样式 */
+        h1 {
+            color: #2d3748;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 15px;
+            margin-bottom: 30px;
+            font-size: 22px;
+        }
+        /* 作品列表样式 */
+        .work-item {
+            margin: 15px 0;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            background-color: #f1f8ff;
+            border-radius: 4px;
+        }
+        .work-item:hover {
+            background-color: #e6f2ff;
+        }
+        a {
+            color: #2c3e50;
+            text-decoration: none;
+            font-size: 16px;
+        }
+        a:hover {
+            color: #3498db;
+            text-decoration: underline;
+        }
+        /* 分类标签样式 */
+        .category {
+            font-weight: bold;
+            color: #3498db;
+            margin-right: 10px;
+        }
     </style>
 </head>
 <body>
-    <h1>我的个人作品集</h1>
-    <p>PDF作品：<a href="Choice_A_stock_data_check.pdf">Choice数据库A股日度交易数据质量校验报告</a></p>
-    <p>PDF作品：<a href="silver_economy_policy_impact.pdf">“银发经济”政策对上市公司业绩影响评估</a></p>
-    <p>PDF作品：<a href="extreme_climate_insurance_research.pdf">极端气候下气象指数保险优化与巨灾风险分担机制研究</a></p>
-    <p>PDF作品：<a href="Tianjin_sugar_free_drink_behavior.pdf">天津市无糖饮料消费者行为研究</a></p>
-    <p>PDF作品：<a href="low_altitude_economy_research.pdf">低空经济行业研究报告-苏麒畅</a></p>
-    <p>代码作品：<a href="strategy.py">策略</a></p>
-    <p>代码作品：<a href="Henan_wheat_yield_HP_filter.py">基于HP滤波法分离河南小麦产量趋势</a></p>
+    <div class="container">
+        <!-- 个人信息栏 -->
+        <div class="profile">
+            <h2>苏麒畅</h2>
+            <p>数据分析 | 行业研究 | 量化策略</p>
+            <p>专注于金融、消费、农业等领域的数据分析与研究</p>
+            <!-- 可按需添加联系方式，比如：<p>邮箱：xxx@xxx.com | 微信：xxxxxx</p> -->
+        </div>
+
+        <h1>我的个人作品集</h1>
+        
+        <div class="work-item">
+            <span class="category">PDF作品：</span>
+            <a href="Choice_A_stock_data_check.pdf">Choice数据库A股日度交易数据质量校验报告</a>
+        </div>
+
+        <div class="work-item">
+            <span class="category">PDF作品：</span>
+            <a href="silver_economy_policy_impact.pdf">“银发经济”政策对上市公司业绩影响评估</a>
+        </div>
+
+        <div class="work-item">
+            <span class="category">PDF作品：</span>
+            <a href="extreme_climate_insurance_research.pdf">极端气候下气象指数保险优化与巨灾风险分担机制研究</a>
+        </div>
+
+        <div class="work-item">
+            <span class="category">PDF作品：</span>
+            <a href="Tianjin_sugar_free_drink_behavior.pdf">天津市无糖饮料消费者行为研究</a>
+        </div>
+
+        <div class="work-item">
+            <span class="category">PDF作品：</span>
+            <a href="low_altitude_economy_research.pdf">低空经济行业研究报告-苏麒畅</a>
+        </div>
+
+        <div class="work-item">
+            <span class="category">代码作品：</span>
+            <a href="strategy.py">策略</a>
+        </div>
+
+        <div class="work-item">
+            <span class="category">代码作品：</span>
+            <a href="Henan_wheat_yield_HP_filter.py">基于HP滤波法分离河南小麦产量趋势</a>
+        </div>
+    </div>
 </body>
 </html>
